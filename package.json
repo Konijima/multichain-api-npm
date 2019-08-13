@@ -1,0 +1,19 @@
+{
+  "name": "multichain-api-npm",
+  "version": "1.0.0",
+  "description": "MultiChain API - Git repo contains only build",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konijima/multichain-api-npm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Konijima/multichain-api-npm/issues"
+  },
+  "homepage": "https://github.com/Konijima/multichain-api-npm#readme"
+}
