@@ -5,7 +5,7 @@ import { RpcResponse } from '../RpcResponse';
  */
 export interface SendRequest extends RpcRequest {
     readonly method: 'send';
-    readonly params: [string, number, string | undefined, string | undefined];
+    readonly params: [string, number];
 }
 /**
  * JSON-RPC response for the *send* command.
@@ -22,8 +22,6 @@ export declare type SendResult = any;
  * a real and is rounded to the nearest 0.00000001
  * @param to The address to send to.
  * @param nativeAmount The amount in native currency to send. eg 0.1
- * @param comment A comment used to store what the transaction is for.
- * @param recipient A comment to store the name of the person or organization
  * @returns A JSON-RPC request for the *send* command.
  */
-export declare function Send(to: string, nativeAmount: number, comment?: string, recipient?: string): SendRequest;
+export declare function Send(to: string, nativeAmount: number): SendRequest;
